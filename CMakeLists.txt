@@ -9,3 +9,4 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 file(GLOB SOURCES "stl2obj/src/*" "stl2obj/src/obj_to_stl/*" "stl2obj/src/stl_to_obj/*")
 
 add_executable(stl2obj ${SOURCES})
+install(TARGETS stl2obj DESTINATION ${CMAKE_INSTALL_BINDIR})

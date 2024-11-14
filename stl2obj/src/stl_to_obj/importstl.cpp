@@ -1,3 +1,4 @@
+#include <cstdint>
 #include <fstream>
 #include <chrono>
 #include <vector>
@@ -84,19 +85,18 @@ void ImportSTL::load(Geometry& model)
                     progress_callback_counter += 1;
                 }
             }
-            
+
             display_progress(progress_val, "Converting");
         }
-            
+
     }
     cout << endl;
 
-    // cout << "Points reduced from " << 3 * numOfTris << " to " << 
+    // cout << "Points reduced from " << 3 * numOfTris << " to " <<
     //   tree.size() << " after merging!" << endl;
 
-    chrono::duration<double> duration = 
+    chrono::duration<double> duration =
         chrono::high_resolution_clock::now() - t0;
     cout << "Finished reading STL in " << (double)duration.count() <<
         " seconds!" << endl;
 }
-

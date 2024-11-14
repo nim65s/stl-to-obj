@@ -1,6 +1,7 @@
 #ifndef TYPE_KDTREE_H_
 #define TYPE_KDTREE_H_
 
+#include <cstdint>
 #include <memory>
 #include <limits>
 #include <vector>

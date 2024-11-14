@@ -1,3 +1,4 @@
+#include <cstdint>
 #include "StlWriter.h"
 
 #include <fstream>
